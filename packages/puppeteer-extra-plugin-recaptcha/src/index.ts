@@ -342,7 +342,7 @@ export class PuppeteerExtraPluginRecaptcha extends PuppeteerExtraPlugin {
   async onPageCreated(page: Page) {
     this.debug('onPageCreated', page.url())
     // Make sure we can run our content script
-    await page.setBypassCSP(true)
+    // await page.setBypassCSP(true)
 
     // Add custom page methods
     this._addCustomMethods(page)
